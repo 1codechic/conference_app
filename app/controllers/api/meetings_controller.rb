@@ -1,5 +1,6 @@
 class Api::MeetingsController < ApplicationController
   def index
+    #@meetings = Meeting.take(3)
     @meetings = Meeting.all
     render 'meetings_index.json.jbuilder'
   end
